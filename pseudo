@@ -1,0 +1,14 @@
+Password Generator
+
+prompt for:
+    length of data
+
+confirm for :
+    uppercase
+    lowercase
+    numeric
+    and/or special characters
+
+display to page in an:
+    alert
+    or written to page
