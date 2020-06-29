@@ -1,5 +1,13 @@
 Password Generator
 
+list variables needed:
+    how many characters
+    lower case -array
+    upper case -array
+    numeric -array
+    special characters - array
+    cboices - an array made of selected choices
+
 prompt for:
     length of data
 
@@ -12,3 +20,13 @@ confirm for :
 display to page in an:
     alert
     or written to page
+
+alerts for:
+    less than 8 or more than 128 characters
+    not selecting a character type
+
+fucntions for:
+    gathering user data
+    combining arrays based on user input
+    generating password
+    reset for clicking button to clear previous password
