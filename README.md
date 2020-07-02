@@ -2,8 +2,7 @@
 
 <hr>
 
-This password generator was created with several functions that when the buttons are clicked.
-<br>
+This password generator was created with several functions that are called when the buttons are clicked.
 
 The Generate Password button calls the following functions:
   <ul>
