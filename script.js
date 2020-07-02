@@ -53,7 +53,7 @@ function generatePassword() {
 }
 
 // This function resets the password output each time you click for a new password.
-function reset() {
+function resetPass() {
   howMany = (0);
   choices = [];
   newPass = ("");
@@ -84,7 +84,7 @@ function copyPass() {
   // When clicked button will run several functions. First it will reset values so the new password is not added to the old password.
   // It will then run user input prompt and confirms, then populate the new array and then write the generated password to box.
   generateBtn.addEventListener("click", function () {
-    reset();
+    resetPass();
     userSelectType();
     addChoices();
     writePassword();
