@@ -1,4 +1,4 @@
-#Password Generator
+<h1>Password Generator
 
 <hr>
 
