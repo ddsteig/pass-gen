@@ -30,4 +30,5 @@ The Generate Password button calls the following functions:
 Within generatePassword, a for loop is used with math.random to randomly select the confirmed characters from the new aray and then the password is written to the box via writePassword function.</li><br>
   <li>The resetPass fucntion resets variables so a new password will be displayed each time the button is clicked, instead of just adding it to the last password generated.</li><br>
   <li>The copyPass fucntion allows used to copy password to the clipboard via pulling the text from the password id. An alert will let the user know the password has been copied for use.</li><br>
+  <li>A Password guide was also added for better instruction for the user.</li><br>
  </ul>
