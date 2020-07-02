@@ -60,7 +60,7 @@ function reset() {
   password = ("");
 }
 
-// Assignment Code.
+// Variables for generate password button and copy password button.
 var generateBtn = document.querySelector("#generate");
 var copyBtn = document.querySelector("#copy");
 
@@ -68,15 +68,14 @@ var copyBtn = document.querySelector("#copy");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
+// Function made to copy password to clipboard by grabbing the id from the pageXOffset.
 function copyPass() {
      var copyText = document.getElementById("password");
     copyText.select();
-    copyText.setSelectionRange(0, 99999)
+    copyText.setSelectionRange(0, 128)
     document.execCommand("copy");
     alert("Copied the text: " + copyText.value);
   }
@@ -91,6 +90,7 @@ function copyPass() {
     writePassword();
   });
 
+  // This button will run the copypass function when clicked allowing user to copy password.
   copyBtn.addEventListener("click", function(){
     copyPass();
   });
