@@ -7,14 +7,18 @@
 html,
 body,
 .wrapper {
-  height: 100%;
   margin: 0;
+  margin-bottom: 1%;
   padding: 0;
+}
+
+h1{
+  margin-top: 2%;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: lightgray;
 }
 
 .wrapper {
@@ -74,7 +78,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(51, 83, 133);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -94,6 +98,7 @@ button[disabled] {
 }
 
 .float-right {
+  margin-top: 5%;
   float: right;
 }
 
@@ -118,20 +123,54 @@ button[disabled] {
   overflow: hidden;
 }
 
+.spacer{
+  margin-bottom: 5%;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: ghostwhite;
+  background: dimgray;
+}
+
+@media(max-width: 1300px) {
+  .spacer{
+    margin-bottom: 10%;
+  }
+
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+  
   }
 
   #password {
     font-size: 1rem;
   }
+
+  h1{
+    margin-top: 5%;
+  }
+
+  .spacer{
+    margin-bottom: 20%;
+  }
+
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
   }
+  h1{
+    margin-top: 5%;
+  }
+
 }

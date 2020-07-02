@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+
+  <div class="wrapper">
+    <div class=card>
+      <h2>Password Guide</h2>
+      <p>
+      <ol>
+        <li>Click Generate Password to begin.</li>
+        <li>Choose between 8 and 128 characters.</li>
+        <li>Select at least one of the following character types by hitting ok. Cancel will omit that type.</li>
+         <ul>
+          <li>Lowercase</li>
+          <li>Uppercase</li>
+          <li>Numeric</li>
+          <li>Special</li>
+        </ul>
+        <li>Click Copy Password to copy to clipboard.</li>
+      </ol>
+      </p>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+        <button id="copy" class="btn">Copy Password</button>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <div class="spacer"></div>
+
+  <footer>
+    <h2>By Danny Steiger</h3>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
