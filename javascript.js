@@ -62,6 +62,7 @@ function reset() {
 
 // Assignment Code.
 var generateBtn = document.querySelector("#generate");
+var copyBtn = document.querySelector("#copy");
 
 // Write password to the #password input. This will also run the generate password function.
 function writePassword() {
@@ -72,12 +73,24 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button.
-// When clicked button will run several functions. First it will reset values so the new password is not added to the old password.
-// It will then run user input prompt and confirms, then populate the new array and then write the generated password to box.
-generateBtn.addEventListener("click", function () {
-  reset();
-  userSelectType();
-  addChoices();
-  writePassword();
-});
+function copyPass() {
+     var copyText = document.getElementById("password");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied the text: " + copyText.value);
+  }
+
+  // Add event listener to generate button.
+  // When clicked button will run several functions. First it will reset values so the new password is not added to the old password.
+  // It will then run user input prompt and confirms, then populate the new array and then write the generated password to box.
+  generateBtn.addEventListener("click", function () {
+    reset();
+    userSelectType();
+    addChoices();
+    writePassword();
+  });
+
+  copyBtn.addEventListener("click", function(){
+    copyPass();
+  });
