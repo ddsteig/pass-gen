@@ -1,8 +1,8 @@
 <h1>Password Generator</h1>
 
-<hr>
-
 ### [Head to the Password Generator here!](https://ddsteig.github.io/pass-gen/)
+
+<hr>
 
 This password generator was created with several functions that are called when the buttons are clicked.
 
