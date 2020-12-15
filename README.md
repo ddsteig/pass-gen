@@ -2,6 +2,8 @@
 
 <hr>
 
+### [Head to the Password Generator here!](https://ddsteig.github.io/pass-gen/)
+
 This password generator was created with several functions that are called when the buttons are clicked.
 
 The Generate Password button calls the following functions:
